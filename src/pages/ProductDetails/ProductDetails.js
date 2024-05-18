@@ -22,7 +22,7 @@ const tabs = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/watch?v=6e0yIRDVPlA&list=RD6e0yIRDVPlA&start_radio=1"
+        src="https://www.youtube.com/embed/m5va6HK_Rhw?si=cFthOca0ORzmNXbF"
         title="YouTube Video"
         frameBorder="0"
         allowFullScreen
@@ -102,17 +102,20 @@ const ProductDetails = () => {
                       </tbody>
                     </table>
                     <div className="my-4 flex justify-end">
-                      <button className="inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-bodyFont">
-                        <FaDownload className="h-5 w-5 mr-2 text-white" />
-                        <a
-                          href={productInfo.pdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-white"
-                        >
-                          Download PDF
-                        </a>{" "}
-                      </button>
+                      <div className=" flex flex-row">
+                        <button className="inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-bodyFont">
+                          <a
+                            href='https://pantum.co.th/public/storage/media/Driver/M6550NW%20PANTUM.pdf'
+                            // {productInfo.pdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white"
+                          >
+                          <FaDownload className="h-5 w-5 mr-2 text-white" />
+                            Download PDF
+                          </a>{" "}
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ) : (

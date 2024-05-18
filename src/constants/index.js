@@ -55,7 +55,6 @@ import {
 
 import "./style.css";
 
-// =================== NavBarList Start here ====================
 export const navBarList = [
   {
     _id: 1001,
@@ -83,12 +82,11 @@ export const navBarList = [
     link: "/journal",
   },
 ];
-// =================== NavBarList End here ======================
-// =================== Special Offer data Start here ============
+
 export const SplOfferData = [
   {
     _id: "201",
-    img: imprimante1,
+    img: spfOne,
     productName: "imprimante",
     price: "35.00",
     color: "Blank and White",
@@ -98,7 +96,7 @@ export const SplOfferData = [
   },
   {
     _id: "202",
-    img: imprimante2,
+    img: spfTwo,
     productName: "imprimante",
     price: "180.00",
     color: "Gray",
@@ -108,7 +106,7 @@ export const SplOfferData = [
   },
   {
     _id: "203",
-    img: imprimante4,
+    img: spfThree,
     productName: "imprimante",
     price: "25.00",
     color: "Mixed",
@@ -118,7 +116,7 @@ export const SplOfferData = [
   },
   {
     _id: "204",
-    img: imprimante5,
+    img: spfFour,
     productName: "imprimante",
     price: "220.00",
     color: "Black",
@@ -287,9 +285,6 @@ export const SplOfferData = [
     cat: "Bac",
   },
 ];
-// =================== Special Offer data End here ==============
-
-// =================== PaginationItems Start here ===============
 
 export const paginationItems = [
   {
@@ -776,7 +771,6 @@ export const paginationItems = [
     cat: "Bac",
   },
 
-  // =================== imprimante hp =================
 
   {
     _id: "hp1",
@@ -960,7 +954,7 @@ export const paginationItems = [
       { label: "Garantie", value: "1 an" },
     ],
   },
-  // =================== imprimante ricoh =================
+
   {
     _id: "ricoh1",
     img: ricoh1,
@@ -1478,7 +1472,6 @@ export const paginationItems = [
     ],
   },
 
-  // =================== imprimante ricoh =================
 
   {
     _id: "espson1",

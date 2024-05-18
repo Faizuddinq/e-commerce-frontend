@@ -27,20 +27,19 @@ const HeaderBottom = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showSearchBar, setShowSearchBar] = useState(false);
-
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
-
+  
   useEffect(() => {
     const filtered = paginationItems.filter((item) =>
       item.productName.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    setFilteredProducts(filtered);
-  }, [searchQuery]);
+  );
+  setFilteredProducts(filtered);
+}, [searchQuery]);
 
-  return (
-    <div className="w-full bg-[#F5F5F3] relative">
+return (
+  <div className="w-full bg-[#F5F5F3] relative">
       <div className="max-w-container mx-auto">
         <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
           <div
@@ -60,23 +59,23 @@ const HeaderBottom = () => {
               >
                 <Link to={"category/imprimante"}>
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Imprimante
+                    Imprimante(PRINTER)
                   </li>
                 </Link>
 
                 <Link to={"category/ancre"}>
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    ancre
+                    ancre(INK)
                   </li>
                 </Link>
                 <Link to={"category/Ruban"}>
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    ruban
+                    ruban(TAPE)
                   </li>
                 </Link>
                 <Link to={"category/Bac"}>
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                    Bac de dechet
+                    Bac de dechet(CARTRIDGE)
                   </li>
                 </Link>
               </motion.ul>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import {
   bannerImgOne,
@@ -15,7 +15,8 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
       backgroundColor: "#F5F5F3", // Gray background color
       display: "flex",
       justifyContent: "center",
-      alignItems: "center", // Center vertically
+      alignItems: "center",
+      // Center vertically
     }}
   >
     <div
@@ -44,11 +45,11 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         {Subtext}
       </p>
 
-      <Link to="/about">
+      <NavLink to="/about">
         <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
           {buttonText}
         </button>
-      </Link>
+      </NavLink>
     </div>
     <div style={{ marginLeft: "100px" }}>
       <Image imgSrc={imgSrc} />

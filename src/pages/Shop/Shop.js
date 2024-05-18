@@ -5,7 +5,7 @@ import ProductBanner from "../../components/pageProps/shopPage/ProductBanner";
 import ShopSideNav from "../../components/pageProps/shopPage/ShopSideNav";
 
 const Shop = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(48);
+  const [itemsPerPage, setItemsPerPage] = useState(36);
   const itemsPerPageFromBanner = (itemsPerPage) => {
     setItemsPerPage(itemsPerPage);
   };
@@ -13,7 +13,6 @@ const Shop = () => {
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Products" />
-      {/* ================= Products Start here =================== */}
       <div className="w-full h-full flex pb-20 gap-10">
         <div className="w-[20%] lgl:w-[25%] hidden mdl:inline-flex h-full">
           <ShopSideNav />
@@ -23,7 +22,6 @@ const Shop = () => {
           <Pagination itemsPerPage={itemsPerPage} />
         </div>
       </div>
-      {/* ================= Products End here ===================== */}
     </div>
   );
 };

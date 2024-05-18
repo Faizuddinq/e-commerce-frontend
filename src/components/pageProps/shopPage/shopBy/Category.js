@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ImPlus } from "react-icons/im";
 import NavTitle from "./NavTitle";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleCategory } from "../../../../redux/orebiSlice";
+import { toggleCategory } from "../../../../redux/astoreSlice";
 
 const Category = () => {
   const [showSubCatOne, setShowSubCatOne] = useState(false);
@@ -17,18 +17,22 @@ const Category = () => {
     {
       _id: 9006,
       title: "Imprimante",
+      title2: "Printer"
     },
     {
       _id: 9007,
       title: "Encre",
+      title2: "Ink"
     },
     {
       _id: 9008,
       title: "Ruban",
+      title2: "Tape"
     },
     {
       _id: 9009,
       title: "Bac de dechet",
+      title2: "Cartridge"
     },
   ];
 
@@ -52,7 +56,7 @@ const Category = () => {
                 checked={checkedCategorys.some((b) => b._id === item._id)}
                 onChange={() => handleToggleCategory(item)}
               />
-              {item.title}
+              {item.title} ({item.title2})
               {item.icons && (
                 <span
                   onClick={() => setShowSubCatOne(!showSubCatOne)}
